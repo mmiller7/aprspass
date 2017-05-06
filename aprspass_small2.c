@@ -8,10 +8,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdint.h>
 
 int main(int argc, const char * argv[])
 {
-	int hash=0x73e2;
+	uint16_t hash=0x73e2;
 
 	for(int x=0; x < strlen(argv[1]); x++)
 		hash ^= toupper(argv[1][x])<<(x%2?0:8);

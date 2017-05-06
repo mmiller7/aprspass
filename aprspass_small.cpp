@@ -7,12 +7,13 @@
 
 #include <iostream>
 #include <string>
+#include <stdint.h>
 
 using namespace std;
 
-int aprspass(string callsign)
+uint16_t aprspass(string callsign)
 {
-	int hash=0x73e2;
+	uint16_t hash=0x73e2;
 
 	for(int x=0; x < callsign.length(); x++)
 		hash ^= toupper(callsign[x])<<(x%2?0:8);
