@@ -16,7 +16,7 @@ int main(int argc, const char * argv[])
 	for(int x=0; x < strlen(argv[1]); x++)
 		hash ^= toupper(argv[1][x])<<(x%2?0:8);
 
-	printf("%i\n",hash);
+	printf("%i\n",hash & 0x7fff);
 
 	return 0;
 }

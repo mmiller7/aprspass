@@ -17,7 +17,7 @@ int aprspass(string callsign)
 	for(int x=0; x < callsign.length(); x++)
 		hash ^= toupper(callsign[x])<<(x%2?0:8);
 
-	return hash;
+	return hash & 0x7fff;
 }
 
 int main(int argc, const char * argv[])

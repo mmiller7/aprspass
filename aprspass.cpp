@@ -32,7 +32,7 @@ int aprspass(string callsign)
 	}
 
 	//return integer hash
-	return hash;
+	return hash & 0x7fff;
 }
 
 int main(int argc, const char * argv[])
