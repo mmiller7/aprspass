@@ -1,6 +1,6 @@
 /*
 	Matthew Miller
-	May 6, 2016
+	May 6, 2017
 	
 	C++ implementation of APRS-IS key calculator based on this
 	PHP by magicbug https://github.com/magicbug/PHP-APRS-Passcode
